@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex form field validations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Regex form field validations</h2>
+    <form>
+        <input type="text" name="username" placeholder="Enter username">
+        <p>Username must contain 6 - 12 characters</p>
+
+        <input type="text" name="email" placeholder="Enter email">
+        <p>Email must be a valid address, e.g. test@domain.com</p>
+
+        <input type="password" name="password" placeholder="Enter password">
+        <p>Password must be alphanumeric (@, _ and - are also allowed) and be 8 - 20 characters long</p>
+
+        <input type="text" name="phone" placeholder="Enter phone">
+        <p>Phone must be a valid telephone number (11 digits) long</p>
+
+        <input type="text" name="slug" placeholder="Enter your profile slug">
+        <p>Slug must contain lowercase letters, numbers and hyphens and be 8 - 20 characters long</p>
+
+    </form>
+    <script type="text/javascript" src="validation.js"></script>
+</body>
+</html>

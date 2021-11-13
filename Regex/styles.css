@@ -1,0 +1,45 @@
+
+h2{
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form{
+    width: 500px;
+    margin: 20px auto;
+}
+
+input{
+    display: block;
+    padding: 8px 16px;
+    font-size: 1em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none !important;
+}
+
+input.valid {
+ border-color: #30cc30;
+}
+
+input.invalid {
+    border-color: #ff0000;
+}
+
+input + p {
+    color: #ff0000;
+    opacity: 0;
+    margin: 0 10px;
+    height: 0;
+    text-align: center;
+} 
+
+input.invalid +p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 10px;
+}
